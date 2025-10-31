@@ -38,13 +38,14 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 }
   }
 
-function atualizaCronometro()
+function atualizaCronometro(){
   for(let i=0; i<contadores.leight;i++){
   document.getElementById("dias0").textContent = calculaTempo(tempos[1])[0];
   document.getElementById("horas0").textContent = calculaTempo(tempos[i])[1];
   document.getElementById("min"+i).textContent = calculaTempo(tempos[1])[2];
   document.getElementById("seg")+i.textContent = calculaTempo(tempos[1])[3];
    console.log("seg"+i);
+}
 }
 function comecaCronometro(){
         atualizaCronometro();
